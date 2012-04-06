@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    @time = Time.now
 
     respond_to do |format|
       format.html # index.html.erb
