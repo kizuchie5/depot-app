@@ -6,5 +6,5 @@
   <td><%= line_item.quantity %> &times; </td>
   <td><%= line_item.product.title %></td>
   <td class id="item_price"><%= number_to_currency(line_item.total_price) %></td>
-  <td><%= button_to 'V', decrement_line_item_path(line_item), :method => :put, :remote => true %></td>
+  <td><%= link_to 'X', decrement_line_item_path(line_item), :method => :put, :remote => true %></td>
 <tr>
