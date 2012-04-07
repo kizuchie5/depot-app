@@ -97,6 +97,7 @@ class LineItemsController < ApplicationController
         format.json { head :no_content }
       else
       format.html { render :action => "edit" }
+      format.js { @current_item = @line_item }
       format.json { render :json => @line_item.errors, :status => :unprocessable_entity }
       end
     end

@@ -29,6 +29,7 @@ class Cart < ActiveRecord::Base
     else
       current_item.destroy
     end
+
     current_item
   end
 end
