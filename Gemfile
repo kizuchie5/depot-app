@@ -8,6 +8,8 @@ gem 'rails', '3.2.3'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'will_paginate', '>=3.0.pre'
+
 gem 'sqlite3'
 
 gem 'json'

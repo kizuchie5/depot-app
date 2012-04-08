@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class CartTest < ActiveSupport::TestCase
-
   def setup
     @cart  = Cart.create
     @book_one = products(:ruby)
@@ -22,5 +21,4 @@ class CartTest < ActiveSupport::TestCase
     assert_equal 1, @cart.line_items.size
     assert_equal 2, @cart.line_items[0].quantity
   end
-
 end

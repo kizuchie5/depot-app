@@ -4,11 +4,12 @@ class Cart < ActiveRecord::Base
       #if cart is destroyed, so are line_items
 
   def add_product(product_id)
-    current_item = line_items.find_by_product_id(product_id)
+    current_item = line_items.where(:product_id => product_id).first
     if current_item
       current_item.quantity += 1
     else
       current_item = line_items.build(:product_id => product_id)
+      current_item.price = current_item.product.price
     end
     current_item
   end
