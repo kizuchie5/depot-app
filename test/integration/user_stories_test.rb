@@ -37,6 +37,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
   # fills in details on check out form, posts data..
   # (app will create the order and redirect to index page)
 
+  #ship_date_expected = Time.now.to_date
   post_via_redirect "/orders",
                     :order => { :name     => "Ruby on Rails",
                                 :address  => "Ubuntu City",
@@ -46,9 +47,10 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
   assert_template "index"
   cart = Cart.find(session[:cart_id])
   assert_equal 0, cart.line_items.size
+  #assert_equal ship_date_expected, order.ship_date.to_date
+
 
   # end of user's purchase
-
 
   # check database if it contains the new order
 
@@ -69,7 +71,19 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
 
   mail = ActionMailer::Base.deliveries.last
   assert_equal ["depot@app.com"], mail.to
-  assert_equal 'Kizuchie Kim <depot@junsuheart.com>', mail[:from].value
+  assert_equal "Kizuchie Kim <depot@junsuheart.com>", mail[:from].value
   assert_equal "Pragmatic Store Order Confirmation", mail.subject
  end
+
+  test "should mail the admin when error occurs" do
+    get "/carts/wibble"
+    assert_response :redirect  # should redirect to...
+    assert_template "/"        # store index
+
+    mail = ActionMailer::Base.deliveries.last
+    assert_equal ["xiahjunsu.kiuch@gmail.com"], mail.to
+    assert_equal "Kizuchie Kim <depot@junsuheart.com>", mail[:from].value
+    assert_equal "An error occurred!", mail.subject
+  end
+
 end

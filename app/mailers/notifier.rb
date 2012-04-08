@@ -1,6 +1,7 @@
 class Notifier < ActionMailer::Base
   default :from => "Kizuchie Kim <depot@junsuheart.com>"
 
+
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -21,5 +22,11 @@ class Notifier < ActionMailer::Base
     @order = order
 
     mail :to => order.email, :subject => 'Pragmatic Store Order Shipped'
+  end
+
+  def app_failure(error)
+    @error = error
+
+    mail :to => "xiahjunsu.kiuch@gmail.com", :subject => 'An error occurred!'
   end
 end

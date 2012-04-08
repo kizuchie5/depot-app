@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+
+  include ActiveModel::Dirty
+
   # GET /orders
   # GET /orders.json
   def index
@@ -73,6 +76,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.update_attributes(params[:order])
+        Notifier.order_shipped(@order).deliver if @order.ship_date_changed?
         format.html { redirect_to @order, :notice => 'Order was successfully updated.' }
         format.json { head :no_content }
       else
