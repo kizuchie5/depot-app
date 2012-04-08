@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @orders }
+      format.xml { render :xml => @orders }
     end
   end
 
@@ -54,6 +55,7 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
+        Notifier.order_received(@order).deliver
         format.html { redirect_to(store_url,
           :notice => 'Thank you for your order.') }
         format.json { render :json => @order, :status => :created, :location => @order }

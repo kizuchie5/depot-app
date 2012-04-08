@@ -87,7 +87,9 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       format.atom
-      format.json { render :json => @product }
+      format.html
+      format.xml { render :xml => @product.to_xml(:include => :orders) }
+      format.json { render :json => @product.to_xml(:include => :orders) }
     end
   end
 end

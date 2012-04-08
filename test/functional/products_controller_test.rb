@@ -60,4 +60,9 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+
+  #test "should get who bought" do
+  #  get :who_bought, :id => @product
+  #  assert_response :success
+  #end
 end
