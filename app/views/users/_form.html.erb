@@ -1,7 +1,7 @@
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h3><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h3>
 
       <ul>
       <% @user.errors.full_messages.each do |msg| %>
@@ -12,18 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, :size => 40 %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 40, :autocomplete => :off %>
   </div>
   <div class="field">
-    <%= f.label :password, 'Password' %><br />
+    <%= f.label :password, 'Password' %>
     <%= f.password_field :password, :size => 40 %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, 'Confirm' %><br />
+    <%= f.label :password_confirmation, 'Confirm' %>
     <%= f.password_field :password_confirmation, :size => 40 %>
   </div>
   <div class="actions">
     <%= f.submit 'Add User' %>
   </div>
 <% end %>
+
+
+
+
