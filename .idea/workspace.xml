@@ -29,46 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="depot.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/depot.css">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="207" column="39" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitconfig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitconfig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitconfig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="58" selection-start="400" selection-end="400" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="142" selection-end="142" vertical-scroll-proportion="0.17826825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="0" selection-end="148" vertical-scroll-proportion="-4.375">
+            <state line="4" column="9" selection-start="55" selection-end="55" vertical-scroll-proportion="0.09787928">
               <folding />
             </state>
           </provider>
@@ -722,11 +695,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="58" selection-start="145" selection-end="145" vertical-scroll-proportion="-4.375">
@@ -780,20 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/depot.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="39" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="68" selection-start="430" selection-end="430" vertical-scroll-proportion="0.39823008">
@@ -801,16 +755,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/depot.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="58" selection-start="400" selection-end="400" vertical-scroll-proportion="-10.625">
+        <state line="207" column="39" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.3882545">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="0" selection-end="148" vertical-scroll-proportion="-4.375">
+        <state line="17" column="58" selection-start="400" selection-end="400" vertical-scroll-proportion="0.43293718">
           <folding />
         </state>
       </provider>
@@ -818,6 +772,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/carts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="142" selection-end="142" vertical-scroll-proportion="0.17826825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="0" selection-end="148" vertical-scroll-proportion="0.17826825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="55" selection-end="55" vertical-scroll-proportion="0.09787928">
           <folding />
         </state>
       </provider>
