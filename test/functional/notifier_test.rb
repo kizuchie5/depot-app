@@ -16,12 +16,6 @@ class NotifierTest < ActionMailer::TestCase
     assert_equal ["depot@junsuheart.com"], mail.from
     assert_match /1 x Programming Ruby 1.9/,
                  mail.body.encoded
-
-
-
-
-
-
   end
 
 end

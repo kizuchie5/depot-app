@@ -1,4 +1,6 @@
 class CartsController < ApplicationController
+  skip_before_filter :authorize, :only => [:create, :update, :destroy]
+
   # GET /carts
   # GET /carts.json
   def index
@@ -15,9 +17,9 @@ class CartsController < ApplicationController
   def show
     begin
       @cart = Cart.find(params[:id])
-    rescue ActiveRecord::RecordNotFound => bug
+    rescue ActiveRecord::RecordNotFound => e
       logger.error "Attempt to access invalid cart #{params[:id]}"
-      Notifier.app_failure(bug).deliver
+      Notifier.app_failure(e).deliver
       redirect_to store_url, :notice => 'Invalid cart'
     else
       respond_to do |format|
